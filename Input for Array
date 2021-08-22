@@ -1,0 +1,25 @@
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    int MAX = 4;
+    int num[MAX];
+    int input;
+    int i = 0;
+    
+    while(i < MAX) {
+        cout << "Type in number: " << endl;
+        cin >> input;
+        num[i] = input;
+        cout << "\n";
+        i++;
+    }
+    
+    for(int n = 0; n < MAX; n++) {
+        cout << num[n] << endl;
+    }
+
+    return 0;
+}
